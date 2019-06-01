@@ -14,7 +14,7 @@ export default function reducer(state, action) {
       case "COMPLETE":
         return {
           ...state,
-          todos: state.todos.filter(t => t !== action.payload)
+          todos: state.todos.filter(element => element !== action.payload)
         }
         default:
           return state
